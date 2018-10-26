@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+}
+
+h2 {
+}
+
+header {
+  height: 50px;
+  text-align: center;
+}
+
+.description {
+  display: block;
+}
+
+.internetOrigin {
+
+}
+
+.wwwOrigin {
+
+}
+
+.internetTech {
+  display: block;
+}
+
+.email {
+
+}
+
+.telnet {
+
+}
+
+.ssh {
+
+}
+
+.ftp {
+
+}
+
+.http {
+
+}
+
+.gopher {
+
+}
+
+.browser {
+
+}
+
+.lynx {
+
+}
+
+.mosaic {
+
+}
+
+.hypertext {
+
+}
