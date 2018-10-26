@@ -3,11 +3,16 @@
   padding: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
 
 }
 
 h2 {
+  margin-left: 10px;
 }
 
 header {
@@ -15,58 +20,90 @@ header {
   text-align: center;
 }
 
-.description {
-  display: block;
+.internetWebContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 300px;
+  grid-template-areas: "Internet Web";
+  grid-column-gap: 10px;
+  margin: 10px 10px 10px 10px;
 }
 
 .internetOrigin {
-
+  grid-area: Internet;
+  border: 2px solid black;
 }
 
 .wwwOrigin {
-
+  grid-area: Web;
+  border: 2px solid black;
 }
 
-.internetTech {
-  display: block;
+.internetTechContainer {
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:"one two three four"
+    "five six seven eight"
+    ". nine . ten";
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 10px 10px 10px 10px;
+}
+
+.gridHeadings {
+  font-size: 1.5rem;
+  text-align: center;
+
 }
 
 .email {
-
+  grid-area: one;
+  border: 2px solid black;
 }
 
 .telnet {
-
+  grid-area: two;
+  border: 2px solid black;
 }
 
 .ssh {
-
+  grid-area: three;
+  border: 2px solid black;
 }
 
 .ftp {
-
+  grid-area: four;
+  border: 2px solid black;
 }
 
 .http {
-
+  grid-area: five;
+  border: 2px solid black;
 }
 
 .gopher {
-
+  grid-area: six;
+  border: 2px solid black;
 }
 
 .browser {
+  grid-area: seven;
+  border: 2px solid black;
 
 }
 
 .lynx {
-
+  grid-area: eight;
+  border: 2px solid black;
 }
 
 .mosaic {
-
+  grid-area: nine;
+  border: 2px solid black;
 }
 
 .hypertext {
-
+  grid-area: ten;
+  border: 2px solid black;
 }
