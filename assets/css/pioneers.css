@@ -1,0 +1,113 @@
+* {
+  border: 0;
+  margin: 0;
+}
+body {
+}
+figure {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  position: absoluter;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+  grid-template-areas: "oneText oneText oneImage"
+  "twoImage twoText twoText"
+  "threeText threeText threeImage"
+  "fourImage fourText fourText"
+  "fiveText fiveText fiveImage"
+  "sixImage sixText sixText"
+  "sevenText sevenText sevenImage"
+  "eightImage eightText eightText"
+  "nineText nineText nineImage"
+  "tenImage tenText tenText";
+  grid-column-gap: 2px;
+  margin: 10px 10px 10px 10px;
+}
+
+div {
+  border: 3px solid black;
+}
+
+div.descriptionContainerOne {
+  grid-area: oneText;
+}
+
+figure.One {
+  grid-area: oneImage;
+}
+
+div.descriptionContainerTwo {
+  grid-area: twoText;
+}
+
+figure.Two {
+  grid-area: twoImage;
+}
+
+div.descriptionContainerThree {
+  grid-area: threeText;
+}
+
+figure.Three {
+  grid-area: threeImage;
+}
+
+div.descriptionContainerFour {
+  grid-area: fourText;
+}
+
+figure.Four {
+  grid-area: fourImage;
+}
+div.descriptionContainerFive {
+  grid-area: fiveText;
+}
+
+figure.Five {
+  grid-area: fiveImage;
+}
+div.descriptionContainerSix {
+  grid-area: sixText;
+}
+
+figure.Six {
+  grid-area: sixImage;
+}
+div.descriptionContainerSeven {
+  grid-area: sevenText;
+}
+
+figure.Seven {
+  grid-area: sevenImage;
+}
+div.descriptionContainerEight {
+  grid-area: eightText;
+}
+
+figure.Eight {
+  grid-area: eightImage;
+}
+div.descriptionContainerNine {
+  grid-area: nineText;
+}
+
+figure.Nine {
+  grid-area: nineImage;
+}
+div.descriptionContainerTen {
+  grid-area: tenText;
+}
+
+figure.Ten {
+  grid-area: tenImage;
+}
