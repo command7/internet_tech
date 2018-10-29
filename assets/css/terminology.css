@@ -7,9 +7,7 @@ html {
   font-size: 16px;
 }
 body {
-  background: url("../media/background2.jpg") no-repeat ;
-  background-color: black;
-  color: white;
+  background-color: #313131;
 }
 
 main {
@@ -26,22 +24,49 @@ main {
   margin: 10px 10px 10px 10px;
 }
 header {
-  height: 50px;
-  padding: 20px;
+  height: 100px;
+  background-color: #313131;
+  color: white;
+  border: 5px outset white;
 }
+nav {
+  display: block;
+  width: 100%;
+  padding-top: 5px;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  font-family: Monoton;
+  padding: 5px 10px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
 header h1 {
   font-size: 3rem;
   text-align: center;
+  font-family: Monoton;
+  padding-top: 10px;
 }
 
 .termHeadings {
   font-size: 1.5rem;
   text-align: center;
+  background-color: #313131;
+  color: white;
 }
 
 div {
-  background: linear-gradient(#e66465, #9198e5);
+  background-color: white;
   overflow: scroll;
+  border: 5px outset white;
+  border-radius: 10px;
+  text-align: justify;
+  padding: 10px;
+  min-width: 150px;
 }
 
 div.term1 {
