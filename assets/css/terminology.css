@@ -1,7 +1,17 @@
 * {
   margin: 0;
   padding: 0;
+
 }
+html {
+  font-size: 16px;
+}
+body {
+  background: url("../media/background2.jpg") no-repeat ;
+  background-color: black;
+  color: white;
+}
+
 main {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
@@ -15,52 +25,96 @@ main {
   grid-column-gap: 2px;
   margin: 10px 10px 10px 10px;
 }
+header {
+  height: 50px;
+  padding: 20px;
+}
+header h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.termHeadings {
+  font-size: 1.5rem;
+  text-align: center;
+}
 
 div {
-  border: 3px dotted black;
+  background: linear-gradient(#e66465, #9198e5);
+  overflow: scroll;
 }
+
 div.term1 {
   grid-area: one;
+  align-self: center;
 }
+
 div.term2 {
   grid-area: two;
+  align-self: center;
 }
+
 div.term3 {
   grid-area: three;
+  align-self: center;
 }
+
 div.term4 {
   grid-area: four;
+  align-self: center;
 }
+
 div.term5 {
   grid-area: five;
+  align-self: center;
 }
+
 div.term6 {
   grid-area: six;
+  align-self: center;
 }
+
 div.term7 {
   grid-area: seven;
+  align-self: center;
 }
+
 div.term8 {
   grid-area: eight;
+  align-self: center;
 }
+
 div.term9 {
   grid-area: nine;
+  align-self: center;
 }
+
 div.term10 {
   grid-area: ten;
+  align-self: center;
 }
+
 div.term11 {
   grid-area: eleven;
+  align-self: center;
 }
+
 div.term12 {
   grid-area: twelve;
+  align-self: center;
 }
+
 div.term13 {
   grid-area: thirteen;
+  align-self: center;
 }
+
 div.term14 {
   grid-area: fourteen;
+  align-self: center;
 }
+
 div.term15 {
   grid-area: fifteen;
+  align-self: center;
 }
