@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 16;
+}
+header {
+  height: 100px;
+  padding-top: 30px;
+  background-color: #313131;
+  border: 5px outset black;
+}
+header h1 {
+  text-align: center;
+  padding-top: 10px;
+  font-family: Monoton;
+  color: white;
+}
+nav {
+  display: block;
+  width: 100%;
+  padding-top: 5px;
+  background-color: black;
+  height: 40px;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  font-family: Monoton;
+  padding: 5px 10px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+}

@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  text-align: justify;
-  line-height: 30px;
+  /* text-align: justify;
+  line-height: 30px; */
 }
 
 html {
@@ -14,6 +14,7 @@ nav {
   width: 100%;
   padding-top: 5px;
   background-color: black;
+  height: 40px;
 }
 
 nav a {
@@ -37,13 +38,17 @@ h2 {
   margin-left: 10px;
 }
 
-h1 {
-  padding: 50px;
-  text-align: center;
-}
-
 header {
+  height: 100px;
+  padding-top: 30px;
+  background-color: #313131;
+  border: 5px outset black;
+}
+header h1 {
   text-align: center;
+  padding-top: 10px;
+  font-family: Monoton;
+  color: white;
 }
 
 figure {

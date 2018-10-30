@@ -4,17 +4,19 @@
   font-family: 'Exo 2'
 }
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 body {
   background-color: #313131
-  line-height: 40px;
+  /* line-height: 40px; */
   background-color: #313131
 }
 nav {
   display: block;
   width: 100%;
   padding-top: 5px;
+  background-color: black;
+  height: 40px;
 }
 
 nav a {
