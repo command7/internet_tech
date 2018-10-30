@@ -28,6 +28,9 @@ nav a {
   text-align: center;
   text-decoration: none;
 }
+a.currentNav {
+  color: yellow;
+}
 
 figure {
   display: inline-block;
@@ -76,7 +79,7 @@ main {
   "tenImage tenText tenText";
   grid-column-gap: 2px;
   grid-row-gap: 10px;
-  margin: 10px 10px 10px 10px;
+  margin: 20px;
 }
 
 div {

@@ -56,6 +56,10 @@ nav a {
   text-decoration: none;
 }
 
+a.currentNav {
+  color: yellow;
+}
+
 div.howItWorks {
   padding: 0 20px;
   display: grid;
@@ -215,7 +219,7 @@ div.delete {
   }
 
   div.workingContent {
-    display: inline-block;
+    display: inline-Fblock;
     padding: 10px;
 
   }

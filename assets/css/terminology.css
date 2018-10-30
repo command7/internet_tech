@@ -44,6 +44,10 @@ nav a {
   text-decoration: none;
 }
 
+a.currentNav {
+  color: yellow;
+}
+
 header {
   height: 100px;
   padding-top: 30px;
