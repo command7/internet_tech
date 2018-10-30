@@ -30,16 +30,20 @@
         <h2>Types of Requests</h2>
         <div class="requestTypes">
           <div class="get">
+            <p class="methodHeadings">GET</p>
             GET method is used to request content from a server. The method is accompanied by the path to the file and the version of HTTP that is used.
             <p>GET www.google.com HTTP1.1</p>
           </div>
           <div class="put">
+            <p class="methodHeadings">PUT</p>
             PUT method is used to modify existing content. It is used to either create a new resource or overwrite an existing one. The path to the file that needs to be modified is also sent along with the version of HTTP being used. Data that needs to replace an existing data is sent in the body header of the request. The server receives this request, parses the body header for data, stores this data in the database and responds to the client with a status code. In database terms PUT method is used for UPDATE functionalities.
           </div>
           <div class="post">
+            <p class="methodHeadings">POST</p>
             POST method is used to supplied user generated data such as profile pictures, user comments, facebook posts etc., to the server. In database terms, POST method is used for CREATE functionalities. If a same POST request is sent twice, the results of this request will vary.
           </div>
           <div class="delete">
+            <p class="methodHeadings">DELETE</p>
             DELETE method is used to delete a resource located at the path specified. It is advised not to provide users with this method unless otherwise it is absolutely required. This is because this might lead to malicious attacks from hackers through loopholes present.
           </div>
         </div>

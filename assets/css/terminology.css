@@ -1,17 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Exo 2';
+
 }
 html {
   font-size: 16px;
 }
 body {
-  background-color: #313131;
+  background-color: #2A0035;
 }
 
 main {
-  padding-top: 3%;
   padding-left: 5%;
   padding-right: 5%;
   display: grid;
@@ -45,10 +44,6 @@ nav a {
   text-decoration: none;
 }
 
-a.currentNav {
-  color: yellow;
-}
-
 header {
   height: 100px;
   padding-top: 30px;
@@ -65,12 +60,13 @@ header h1 {
 .termHeadings {
   font-size: 1.5rem;
   text-align: center;
-  background-color: #313131;
-  color: white;
+  background-color: #361d8e;
+  color:#16a20d;
 }
 
 div {
-  background-color: white;
+  background-color: #821C07;
+  color: white;
   overflow: scroll;
   border: 5px outset white;
   border-radius: 10px;
@@ -259,7 +255,7 @@ div.term15 {
     "five six"
     "seven eight"
     "nine ten"
-    "elevel twelve"
+    "eleven twelve"
     "thirteen .";
     grid-column-gap: 80px;
     grid-row-gap: 80px;

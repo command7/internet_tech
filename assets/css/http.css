@@ -18,9 +18,6 @@ header h1 {
   font-family: Monoton;
   color: white;
 }
-h2 {
-  padding: 20px;
-}
 nav {
   display: block;
   width: 100%;
@@ -55,7 +52,9 @@ nav a {
   text-align: center;
   text-decoration: none;
 }
-
+body {
+  background-color:#821C07;
+}
 a.currentNav {
   color: yellow;
 }
@@ -67,16 +66,30 @@ div.howItWorks {
   grid-template-rows: auto;
   grid-template-areas: "image content content";
   grid-column-gap: 20px;
+  padding-bottom: 20px;
 }
 figure.image {
   grid-area: image;
-  padding: 10px;
+  /* padding: 10px; */
+  margin-left: 10px;
+  margin-top: 20px;
 }
 div.workingContent {
   grid-area: content;
   padding: 0 10px;
   text-align: justify;
   min-width: 350px;
+  background-color: #821C07;
+  color:white;
+  margin-top: 13px;
+}
+
+h2 {
+  padding: 10px 20px;
+  background-color: #361d8e;
+  color:#16a20d;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 
 div.requestTypes {
@@ -91,31 +104,62 @@ div.requestTypes {
 
 div.get {
   grid-area: get;
+  background-color:#821C07;
+  padding: 4%;
+  text-align: justify;
+  border: 2px outset grey;
+  border-radius: 5px;
+  color: white;
+}
+
+p.methodHeadings {
+  text-align: center;
+  font-weight: bolder;
+  border-bottom: 1px solid grey;
+  font-size: 1.3rem;
 }
 
 div.post {
   grid-area: post;
+  background-color:#821C07;
+  padding: 4%;
+  text-align: justify;
+  border: 2px outset grey;
+  border-radius: 5px;
+  color: white;
 }
 
 div.put {
   grid-area: put;
+  background-color:#821C07;
+  padding: 4%;
+  text-align: justify;
+  border: 2px outset grey;
+  border-radius: 5px;
+  color: white;
 }
 
 div.delete {
   grid-area: delete;
+  background-color:#821C07;
+  padding: 4%;
+  text-align: justify;
+  border: 2px outset grey;
+  border-radius: 5px;
+  color: white;
 }
 @media screen and (max-width: 1300px) {
   div.howItWorks {
     display: block;
   }
   figure.image{
-    display: inline;
+    display: block;
     float: left;
     width: 600px;
     margin-right: 20px;
   }
   div.workingContent {
-    display: inline;
+    display: block;
     padding: 10px;
   }
 }
