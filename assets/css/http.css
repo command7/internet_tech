@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Exo 2';
 }
 html {
   font-size: 16;
@@ -17,12 +18,32 @@ header h1 {
   font-family: Monoton;
   color: white;
 }
+h2 {
+  padding: 20px;
+}
 nav {
   display: block;
   width: 100%;
   padding-top: 5px;
   background-color: black;
   height: 40px;
+}
+
+figure.image {
+  /* min-width: 400px;
+  max-width: 600px; */
+  width: 600px;
+  height: 550px;
+  border: 3px solid black;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+}
+
+div {
+  line-height: 30px;
 }
 
 nav a {
@@ -33,4 +54,195 @@ nav a {
   margin-left: 10px;
   text-align: center;
   text-decoration: none;
+}
+
+div.howItWorks {
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "image content content";
+  grid-column-gap: 20px;
+}
+figure.image {
+  grid-area: image;
+  padding: 10px;
+}
+div.workingContent {
+  grid-area: content;
+  padding: 0 10px;
+  text-align: justify;
+  min-width: 350px;
+}
+
+div.requestTypes {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "get post put delete";
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+div.get {
+  grid-area: get;
+}
+
+div.post {
+  grid-area: post;
+}
+
+div.put {
+  grid-area: put;
+}
+
+div.delete {
+  grid-area: delete;
+}
+@media screen and (max-width: 1300px) {
+  div.howItWorks {
+    display: block;
+  }
+  figure.image{
+    display: inline;
+    float: left;
+    width: 600px;
+    margin-right: 20px;
+  }
+  div.workingContent {
+    display: inline;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 1050px) {
+
+  figure.image{
+    display: block;
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin-right: 20%;
+    margin-left: 20%;
+
+  }
+  div.workingContent {
+    display: block;
+    padding: 10px;
+
+  }
+  div.requestTypes {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "get post" "put delete";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  div.get {
+    grid-area: get;
+  }
+
+  div.post {
+    grid-area: post;
+  }
+
+  div.put {
+    grid-area: put;
+  }
+
+  div.delete {
+    grid-area: delete;
+  }
+}
+@media screen and (max-width: 900px) {
+  figure.image{
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin-right: 20%;
+    margin-left: 20%;
+
+  }
+  div.workingContent {
+    display: block;
+    padding: 10px;
+
+  }
+  div.requestTypes {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "get post" "put delete";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  div.get {
+    grid-area: get;
+  }
+
+  div.post {
+    grid-area: post;
+  }
+
+  div.put {
+    grid-area: put;
+  }
+
+  div.delete {
+    grid-area: delete;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  figure.image{
+    display: block;
+    clear: both;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+
+  nav {
+    height: auto;
+  }
+
+  div.workingContent {
+    display: block;
+    padding: 10px;
+
+  }
+  div.requestTypes {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "get" "post" "put" "delete";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  div.get {
+    grid-area: get;
+  }
+
+  div.post {
+    grid-area: post;
+  }
+
+  div.put {
+    grid-area: put;
+  }
+
+  div.delete {
+    grid-area: delete;
+  }
+
 }

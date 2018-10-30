@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/css/http.css">
     <link href="https://fonts.googleapis.com/css?family=Exo+2%7CMonoton"rel="stylesheet">
-    <title></title>
+    <title>HTTP</title>
   </head>
   <body>
     <header>
@@ -17,6 +17,34 @@
       <a href="terminology.html">Terminology</a>
     </nav>
     <main>
+      <h2>Web server functionality</h2>
+      <div class="contentContainer">
+        <div class="howItWorks">
+          <figure class="image">
+            <img src="assets/media/httpreqresp.png" alt="">
+          </figure>
+          <div class="workingContent">
+            Web servers and clients communicate between each other using HTTP protocol and use TCP/IP protocol to establish communication sessions to accomplish it. Clients can request content from the web server, post new content to the web server, modify existing data or even delete content. Clients are usually web browsers such as Mozilla Firefox, Internet Explorer, Safari, Lynx, Google Chrome etc., These clients send a request to the server to serve specific content from the server using an Uniform Resource Locater(URI). The URI is an unique address that specifies the path where content is present. URIs consist of certain important information such as the protocol that is used(HTTP or HTTPS), domain name, path to the file that is being requested etc., If the client intends to send certain information to the server to be stored in a database, this information is also sent along through the URI. Sometimes, passwords, credit card information and other sensitive data can also be sent and therefoe this information is encoded for security reasons so that content that is sent is not accessible to intermediaries. Since, clients can do more than request data, they have to inform the server of their intention. Clients accomplish this by using HTTP methods namely GET, PUT, POST, DELETE and several other methods where each method informs the browser whether the user wants to request content, modify content, delete content etc., Sometimes, the file that a client requests may not be present in that location. Servers use a set of standardized status codes that state the outcome of a request from the client. If the requested content is available and is successfully provided to the client, the server sends a 200 status code along with the response as a header(metadata). If the requested content is not available at the location a 404 status code is sent. There are several other status codes and each status code serves a different purpose.
+          </div>
+        </div>
+        <h2>Types of Requests</h2>
+        <div class="requestTypes">
+          <div class="get">
+            GET method is used to request content from a server. The method is accompanied by the path to the file and the version of HTTP that is used.
+            <p>GET www.google.com HTTP1.1</p>
+          </div>
+          <div class="put">
+            PUT method is used to modify existing content. It is used to either create a new resource or overwrite an existing one. The path to the file that needs to be modified is also sent along with the version of HTTP being used. Data that needs to replace an existing data is sent in the body header of the request. The server receives this request, parses the body header for data, stores this data in the database and responds to the client with a status code. In database terms PUT method is used for UPDATE functionalities.
+          </div>
+          <div class="post">
+            POST method is used to supplied user generated data such as profile pictures, user comments, facebook posts etc., to the server. In database terms, POST method is used for CREATE functionalities. If a same POST request is sent twice, the results of this request will vary.
+          </div>
+          <div class="delete">
+            DELETE method is used to delete a resource located at the path specified. It is advised not to provide users with this method unless otherwise it is absolutely required. This is because this might lead to malicious attacks from hackers through loopholes present.
+          </div>
+        </div>
+
+      </div>
 
     </main>
     <footer>
