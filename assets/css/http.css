@@ -53,7 +53,7 @@ nav a {
   text-decoration: none;
 }
 body {
-  background-color:#821C07;
+  background-color:#2A0035;
 }
 a.currentNav {
   color: yellow;
@@ -87,7 +87,7 @@ div.workingContent {
 h2 {
   padding: 10px 20px;
   background-color: #361d8e;
-  color:#16a20d;
+  color:#ffbc46;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
 }

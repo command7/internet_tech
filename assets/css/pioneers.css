@@ -7,9 +7,8 @@ html {
   font-size: 16px;
 }
 body {
-  background-color: #313131
+  background-color: #2A0035;
   /* line-height: 40px; */
-  background-color: #313131
 }
 nav {
   display: block;
@@ -31,6 +30,7 @@ nav a {
 a.currentNav {
   color: yellow;
 }
+
 
 figure {
   display: inline-block;
@@ -60,7 +60,11 @@ header h1 {
 
 h2 {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: #361d8e;
+  color:#ffbc46;
+  margin-bottom: 10px;
 }
 
 main {
@@ -85,7 +89,8 @@ main {
 div {
   overflow: scroll;
   border: 5px outset black;
-  background-color: white;
+  background-color: #821C07;
+  color: white;
 
 }
 
