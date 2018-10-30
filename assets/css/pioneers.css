@@ -83,7 +83,7 @@ main {
   "tenImage tenText tenText";
   grid-column-gap: 2px;
   grid-row-gap: 10px;
-  margin: 20px;
+  margin: 30px;
 }
 
 div {
@@ -186,4 +186,140 @@ div.descriptionContainerTen {
 
 figure.Ten {
   grid-area: tenImage;
+}
+
+@media screen and (max-width: 750px) {
+  nav {
+    height: auto;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: ". oneImage ."
+    "oneText oneText oneText"
+    ". twoImage ."
+    "twoText twoText twoText"
+    ". threeImage ."
+    "threeText threeText threeText"
+    ". fourImage ."
+    "fourText fourText fourText"
+    ". fiveImage ."
+    "fiveText fiveText fiveText"
+    ". sixImage ."
+    "sixText sixText sixText"
+    ". sevenImage ."
+    "sevenText sevenText sevenText"
+    ". eightImage ."
+    "eightText eightText eightText"
+    ". nineImage ."
+    "nineText nineText nineText"
+    ". tenImage ."
+    "tenText tenText tenText";
+    grid-column-gap: 2px;
+    grid-row-gap: 10px;
+    margin: 30px;
+  }
+
+  div {
+    overflow: scroll;
+    border: 5px outset black;
+    background-color: #821C07;
+    color: white;
+
+  }
+
+  div.descriptionContainerOne {
+    grid-area: oneText;
+      padding: 10px;
+  }
+
+  figure.One {
+    grid-area: oneImage;
+
+  }
+
+  div.descriptionContainerTwo {
+    grid-area: twoText;
+
+    padding: 10px;
+  }
+
+  figure.Two {
+    grid-area: twoImage;
+  }
+
+  div.descriptionContainerThree {
+    grid-area: threeText;
+
+    padding: 10px;
+  }
+
+  figure.Three {
+    grid-area: threeImage;
+  }
+
+  div.descriptionContainerFour {
+    grid-area: fourText;
+
+    padding: 10px;
+  }
+
+  figure.Four {
+    grid-area: fourImage;
+  }
+  div.descriptionContainerFive {
+    grid-area: fiveText;
+
+    padding: 10px;
+  }
+
+  figure.Five {
+    grid-area: fiveImage;
+  }
+  div.descriptionContainerSix {
+    grid-area: sixText;
+
+    padding: 10px;
+  }
+
+  figure.Six {
+    grid-area: sixImage;
+  }
+  div.descriptionContainerSeven {
+    grid-area: sevenText;
+
+    padding: 10px;
+  }
+
+  figure.Seven {
+    grid-area: sevenImage;
+  }
+  div.descriptionContainerEight {
+    grid-area: eightText;
+
+    padding: 10px;
+  }
+
+  figure.Eight {
+    grid-area: eightImage;
+  }
+  div.descriptionContainerNine {
+    grid-area: nineText;
+
+    padding: 10px;
+  }
+
+  figure.Nine {
+    grid-area: nineImage;
+  }
+  div.descriptionContainerTen {
+    grid-area: tenText;
+
+    padding: 10px;
+  }
+
+  figure.Ten {
+    grid-area: tenImage;
+  }
 }

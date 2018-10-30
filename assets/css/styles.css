@@ -71,7 +71,7 @@ figure img {
   grid-template-rows: auto;
   grid-template-areas: "Internet Web";
   grid-column-gap: 30px;
-  margin: 10px 10px 10px 10px;
+  margin: 30px;
 }
 
 .internetOrigin {
@@ -96,7 +96,7 @@ figure img {
     "seven eight eight nine";
   /* grid-column-gap: 10px;
   grid-row-gap: 10px; */
-  margin: 10px 10px 10px 10px;
+  margin: 30px;;
 }
 
 .gridHeadings {
