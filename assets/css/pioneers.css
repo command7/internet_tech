@@ -4,10 +4,13 @@
   font-family: 'Exo 2'
 }
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 body {
-  background-color: #2A0035;
+  /* background-color: #2A0035; */
+  background: url("../media/web.jpg") no-repeat;
+  background-size: cover;
+  opacity: 0.9;
   /* line-height: 40px; */
 }
 nav {
@@ -48,14 +51,15 @@ figure img {
 header {
   height: 100px;
   padding-top: 30px;
-  background-color: #313131;
+  background: url("../media/headerbg5.png") no-repeat;
+  background-size: cover;
   border: 5px outset black;
 }
 header h1 {
   text-align: center;
   padding-top: 10px;
   font-family: Monoton;
-  color: white;
+  color: black;
 }
 
 h2 {

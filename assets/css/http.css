@@ -4,19 +4,25 @@
   font-family: 'Exo 2';
 }
 html {
-  font-size: 16;
+  font-size: 18px;
+}
+body {
+  background: url("../media/web.jpg") no-repeat;
+  background-size: cover;
+  opacity: 0.9;
 }
 header {
   height: 100px;
   padding-top: 30px;
-  background-color: #313131;
+  background: url("../media/headerbg5.png") no-repeat;
+  background-size: cover;
   border: 5px outset black;
 }
 header h1 {
   text-align: center;
   padding-top: 10px;
   font-family: Monoton;
-  color: white;
+  color: black;
 }
 nav {
   display: block;
@@ -52,9 +58,7 @@ nav a {
   text-align: center;
   text-decoration: none;
 }
-body {
-  background-color:#2A0035;
-}
+
 a.currentNav {
   color: yellow;
 }
